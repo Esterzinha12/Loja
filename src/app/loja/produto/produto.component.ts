@@ -14,7 +14,7 @@ export class ProdutoComponent implements OnInit {
     private router: Router
   ) { 
 
-    this.idProduto=route.params.value.id
+    this.idProduto=route.snapshot.paramMap.get('id');
   }
 
   ngOnInit() {
